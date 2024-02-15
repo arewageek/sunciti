@@ -17,18 +17,18 @@ export const Header = () => {
             desc: 'We install solar inverters, water heaters and deal in the sales, installation and maintenance of different solar based technologies. We make your home and offices run on 24/7 power supply',
             cta: {
                 link: '/about',
-                label: 'Learn More'
+                label: 'Request Quote'
             }
         },
         {
             id: 1,
             image: './assets/images/Image2.png',
             background: '',
-            heading: 'Solar Power Energy',
-            desc: 'We install solar inverters, water heaters and deal in the sales, installation and maintenance of different solar based technologies. We make your home and offices run on 24/7 power supply',
+            heading: 'Shop Solar Gadgets',
+            desc: 'On our online store, you find a wide range of solar equipments and tools to enable you level up and optimize your energy bills. We deliver across all 36 states of Nigeria and offer free shipping within Abuja',
             cta: {
-                link: '/about',
-                label: 'Learn More'
+                link: '/shop',
+                label: 'Explore Store'
             }
         },
         {
