@@ -12,7 +12,7 @@ export const Header = () => {
         {
             id: 0,
             image: './assets/images/Image1.png',
-            background: '',
+            background: './assets/images/bg1.jpg',
             heading: 'Solar Power Energy',
             desc: 'We install solar inverters, water heaters and deal in the sales, installation and maintenance of different solar based technologies. We make your home and offices run on 24/7 power supply',
             cta: {
@@ -23,7 +23,7 @@ export const Header = () => {
         {
             id: 1,
             image: './assets/images/Image2.png',
-            background: '',
+            background: './assets/images/solar-bg-3.jpg',
             heading: 'Shop Solar Gadgets',
             desc: 'On our online store, you find a wide range of solar equipments and tools to enable you level up and optimize your energy bills. We deliver across all 36 states of Nigeria and offer free shipping within Abuja',
             cta: {
@@ -34,7 +34,7 @@ export const Header = () => {
         {
             id: 2,
             image: './assets/images/Image3.png',
-            background: '',
+            background: './assets/images/solar-bg-4.jpg',
             heading: 'Electrical Wiring',
             desc: 'We design and implement electrical designs/wiring for all types of building plans and structural plans. We work for both small and large scale structures and deliver in as short a time as possible',
             cta: {
@@ -69,22 +69,20 @@ export const Header = () => {
     }
 
     const autoSwitchTab = () => {
-        if(activeSlide == slides.length){
-            setActiveSlide(0)
-            return;
-        }
-        setActiveSlide(initial => initial ++)
+        setActiveSlide((initial => (initial + 1) % slides.length))
     }
 
     useEffect(() => {
-        setTimeout(() => {
-            autoSwitchTab()
-        }, 200);
+
+        const intervalId = setInterval(autoSwitchTab, 5000)
+        
+        return () => clearInterval(intervalId)
+        
     }, [])
     
     return (
         <div className='relative'>
-            <div className='w-full h-screen bg-black/80 text-orange-50 flex flex-col-reverse md:flex-row justify-around items-center bg-center bg-cover bg-blend-overlay' style={{ backgroundImage: "url('./assets/images/bg1.jpg')"}}>
+            <div className='w-full h-screen bg-black/80 text-orange-50 flex flex-col-reverse md:flex-row justify-around items-center bg-center bg-cover bg-blend-overlay' style={{ backgroundImage: `url('${slides[activeSlide].background}')`}}>
                 <div>
                     <div className='flex flex-row md:flex-col space-x-4 md:space-y-4 md:space-x-0'>
                         {
@@ -101,7 +99,7 @@ export const Header = () => {
                             { slides[activeSlide].heading} <img className='hidden md:inline ml-5 w-[150pt] h-[65pt] rounded-full grayscale hover:grayscale-0 cursor-pointer transition duration-300 hover:animate-pulse' src={slides[activeSlide].image} />
                         </h2>
 
-                        <p className='text-sm md:text-lg text-gray-300 text-justify'>
+                        <p className='text-sm md:text-lg pr-4 text-gray-300 text-justify'>
                             { slides[activeSlide].desc }
                         </p>
                     </div>
