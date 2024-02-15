@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { FaLeaf, FaPlay } from 'react-icons/fa'
 import { HeaderCard } from './HeaderCard'
 import { Player } from '@lottiefiles/react-lottie-player'
@@ -67,6 +67,20 @@ export const Header = () => {
     const switchTab = (id) => {
         setActiveSlide(id)
     }
+
+    const autoSwitchTab = () => {
+        if(activeSlide == slides.length){
+            setActiveSlide(0)
+            return;
+        }
+        setActiveSlide(initial => initial ++)
+    }
+
+    useEffect(() => {
+        setTimeout(() => {
+            autoSwitchTab()
+        }, 200);
+    }, [])
     
     return (
         <div className='relative'>
