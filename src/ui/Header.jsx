@@ -81,7 +81,7 @@ export const Header = () => {
                     </div>
                 </div>
                 
-                <div className='w-full md:w-[80%] px-10 pt-10 mt-10 md:mt-0 md:pt-0'>
+                <div className='w-full md:w-[80%] px-5 pt-10 mt-10 md:mt-0 md:pt-0'>
                     <div className='w-full md:w-1/2 mb-6'>
                         <h2 className='text-[40pt] pb-5 md:text-[80pt] font-extrabold leading-tight'>
                             { slides[activeSlide].heading} <img className='hidden md:inline ml-5 w-[150pt] h-[65pt] rounded-full grayscale hover:grayscale-0 cursor-pointer transition duration-300 hover:animate-pulse' src={slides[activeSlide].image} />
