@@ -1,6 +1,6 @@
 export const HeaderCard = ({ icon, title, desc }) => {
     return (
-        <div className='w-full md:w-1/3 rounded-3xl bg-gray-50 p-5 shadow-xl'>
+        <div className='w-full lg:w-1/3 rounded-3xl bg-gray-50 p-5 shadow-xl'>
             <div className='relative'>
                 <div className='text-[40pt] flex justify-center items-center pb-10 pt-5'>
                     <div className='text-orange-500'>
@@ -14,7 +14,7 @@ export const HeaderCard = ({ icon, title, desc }) => {
                     </h2>
                 </div>
 
-                <div className='text-center mt-5 px-4 md:px-10 text-gray-700 text-[10pt] leading-7'>
+                <div className='text-center mt-5 px-4 lg:px-10 text-gray-700 text-[10pt] leading-7'>
                     <p>
                         { desc }
                     </p>

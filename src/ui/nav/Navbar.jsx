@@ -48,13 +48,13 @@ export const Navbar = () => {
     ]
     
     return (
-        <div className={`z-[99999999] backdrop-blur-md w-full px-5 md:px-10 py-5 min-h-[40pt] shadow-2xl text-gray-800 transition fixed top-0 ${headerSticky ? 'bg-white text-gray-50' : 'bg-transparent text-white'}`}>
+        <div className={`z-[99999999] backdrop-blur-md w-full px-5 lg:px-10 py-5 min-h-[40pt] shadow-2xl text-gray-800 transition fixed top-0 ${headerSticky ? 'bg-white text-gray-50' : 'bg-transparent text-white'}`}>
             <div className='w-full flex justify-between items-center'>
                 <div className='w-full font-bold text-2xl'>
                     MainOne Energy
                 </div>
 
-                <div className='w-full hidden md:flex justify-between'>
+                <div className='w-full hidden lg:flex justify-between'>
                     <div className='flex space-x-4 text-sm font-[450] items-center'>
                         {
                             menu.map(nav => {
@@ -88,7 +88,7 @@ export const Navbar = () => {
                     </div>
                 </div>
 
-                <div className='md:hidden'>
+                <div className='lg:hidden'>
                     <button className='bg-accent-100 text-accent-200 shadow-lg flex justify-center items-center px-4 py-2 rounded-lg border-2 border-transparent hover:bg-accent-100/50 transition hover:border-accent-100 hover:text-accent-100'>
                         <AiOutlineMenu />
                     </button>
