@@ -34,41 +34,6 @@ export const MeetMainonTabs = () => {
                 <p className="leading-normal text-gray-600/90 text-justify py-5 lg:pr-10">
                     We Provide clean, dependable, environmentally friendly, and cost-effective electrical energy to people all over the world in order to save our planet for future generations.
                 </p>
-
-                <ul className="list-inside pl-[25pt] flex flex-col space-y-4 font-[450]">
-                    <li className="my-2 text-gray-600/90 flex items-center space-x-4">
-                    <div>
-                        <div className="p-1 rounded-full border-2 border-green-500 animate-ping">
-                        <div className="h-[6px] w-[6px] rounded-full bg-green-500"></div>
-                        </div>
-                    </div>
-                    <div>
-                        Ground Mounting System
-                    </div>
-                    </li>
-
-                    <li className="my-2 text-gray-600/90 flex items-center space-x-4">
-                    <div>
-                        <div className="p-1 rounded-full border-2 border-green-500 animate-ping">
-                        <div className="h-[6px] w-[6px] rounded-full bg-green-500"></div>
-                        </div>
-                    </div>
-                    <div>
-                        Flat Roof Mounting System
-                    </div>
-                    </li>
-
-                    <li className="my-2 text-gray-600/90 flex items-center space-x-4">
-                    <div>
-                        <div className="p-1 rounded-full border-2 border-green-500 animate-ping">
-                        <div className="h-[6px] w-[6px] rounded-full bg-green-500"></div>
-                        </div>
-                    </div>
-                    <div>
-                        Solar Carport
-                    </div>
-                    </li>
-                </ul>
             </div>
 
 
@@ -76,8 +41,6 @@ export const MeetMainonTabs = () => {
                 <p className="leading-normal text-gray-600/90 text-justify py-5 lg:pr-10">
                     We envision a time when solar powered technologies and solutions are available limitlessly across all of Africa, helping Africans truly harness the power in it's surrounding not just dependent on solar alone, but from all other forms of renewable energy sources
                 </p>
-
-                
             </div>
 
 
