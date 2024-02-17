@@ -18,7 +18,8 @@ module.exports = {
       fontFamily: {
         'roboto': ['Roboto'],
         'poppins': ["Poppins", "sans-serif"],
-        'exo2': ["Exo 2", "sans-serif"]
+        'exo2': ["Exo 2", "sans-serif"],
+        'rocksalt': ["Rock Salt", "cursive"]
       }
     },
   },

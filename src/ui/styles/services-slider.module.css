@@ -1,0 +1,11 @@
+.stroked{
+    margin: 0;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-weight: 700;
+    font-size: 150px;
+    line-height: 1;
+    font-family: "Exo", sans-serif;
+}    

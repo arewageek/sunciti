@@ -82,35 +82,35 @@ export const Header = () => {
     
     return (
         <div className='relative'>
-            <div className='w-full h-screen bg-black/80 text-orange-50 flex flex-col-reverse md:flex-row justify-around items-center bg-center bg-cover bg-blend-overlay' style={{ backgroundImage: `url('${slides[activeSlide].background}')`}}>
+            <div className='w-full h-screen bg-black/80 text-orange-50 flex flex-col-reverse lg:flex-row justify-around items-center bg-center bg-cover bg-blend-overlay' style={{ backgroundImage: `url('${slides[activeSlide].background}')`}}>
                 <div>
-                    <div className='flex flex-row md:flex-col space-x-4 md:space-y-4 md:space-x-0'>
+                    <div className='flex flex-row lg:flex-col space-x-4 lg:space-y-4 lg:space-x-0'>
                         {
                             slides.map(slide => (
-                                <button key={slide.id} onClick={() => switchTab(slide.id)} className={`${activeSlide == slide.id ? 'bg-gray-50' : 'bg-gray-200/30 border-gray-200/50'} hover:bg-gray-50 cursor-pointer transition w-[14pt] h-[5pt] md:w-[5pt] md:h-[14pt] rounded-full border-2 `}></button>
+                                <button key={slide.id} onClick={() => switchTab(slide.id)} className={`${activeSlide == slide.id ? 'bg-gray-50' : 'bg-gray-200/30 border-gray-200/50'} hover:bg-gray-50 cursor-pointer transition w-[14pt] h-[5pt] lg:w-[5pt] lg:h-[14pt] rounded-full border-2 `}></button>
                             ))
                         }
                     </div>
                 </div>
                 
-                <div className='w-full md:w-[80%] px-5 pt-10 mt-10 md:mt-0 md:pt-0'>
-                    <div className='w-full md:w-1/2 mb-6'>
-                        <h2 className='text-[40pt] pb-5 md:text-[80pt] font-extrabold leading-tight'>
-                            { slides[activeSlide].heading} <img className='hidden md:inline ml-5 w-[150pt] h-[65pt] rounded-full grayscale hover:grayscale-0 cursor-pointer transition duration-300 hover:animate-pulse' src={slides[activeSlide].image} />
+                <div className='w-full lg:w-[80%] px-5 pt-10 mt-10 lg:mt-0 lg:pt-0'>
+                    <div className='w-full md:w-2/3 lg:w-1/2 mb-6'>
+                        <h2 className='text-[40pt] pb-5 md:text-[60pt] lg:text-[80pt] font-extrabold leading-tight'>
+                            { slides[activeSlide].heading} <img className='hidden lg:inline ml-5 w-[150pt] h-[65pt] rounded-full grayscale hover:grayscale-0 cursor-pointer transition duration-300 hover:animate-pulse' src={slides[activeSlide].image} />
                         </h2>
 
-                        <p className='text-sm md:text-lg pr-4 text-gray-300 text-justify'>
+                        <p className='text-sm lg:text-lg pr-4 text-gray-300 text-justify'>
                             { slides[activeSlide].desc }
                         </p>
                     </div>
 
                     <div className='w-full flex items-center space-x-3'>
-                        <a href="/about" className='text-black bg-white px-8 py-3 md:py-5 md:px-10 rounded-2xl text-sm md:text-md font-bold hover:bg-transparent hoer:border-white border-2 hover:text-white transition duration-300'>
+                        <a href="/about" className='text-black bg-white px-8 py-3 lg:py-5 lg:px-10 rounded-2xl text-sm lg:text-md font-bold hover:bg-transparent hoer:border-white border-2 hover:text-white transition duration-300'>
                             Learn More
                         </a>
 
                         <div className='flex relative items-center justify-center bg-white/20 rounded-full p-2 animate-pulse hover:bg-orange-600/30 hover:text-white transition hover:animate-bounce'>
-                            <button className='text-black bg-white px-3 py-3 md:py-5 md:px-5 rounded-full text-sm md:text-md font-bold  transition duration-300 hover:bg-orange-600 hover:text-white flex justify-center items-center animate-pulse'>
+                            <button className='text-black bg-white px-3 py-3 lg:py-5 lg:px-5 rounded-full text-sm lg:text-md font-bold  transition duration-300 hover:bg-orange-600 hover:text-white flex justify-center items-center animate-pulse'>
                                 <FaPlay />
                             </button>
                         </div>
@@ -118,9 +118,9 @@ export const Header = () => {
                 </div>
             </div>
 
-            <div className='w-full md:w-[70%] mx-auto '>
+            <div className='w-full lg:w-[70%] mx-auto '>
                 <div className='w-full relative'>
-                    <div className='w-full flex justify-around flex-col md:flex-row relative -top-[50pt] md:-top-[80pt] min-h-[100pt] md:space-x-8 space-y-8 md:space-y-0 px-6 py-5 md:py-0'>
+                    <div className='w-full flex justify-around flex-col lg:flex-row relative -top-[50pt] lg:-top-[80pt] min-h-[100pt] lg:space-x-8 space-y-8 lg:space-y-0 px-6 py-5 lg:py-0'>
                         {
                             headerCards.map(card => <HeaderCard key={card.title} title={card.title} desc={card.desc} icon={card.icon} />)
                         }
