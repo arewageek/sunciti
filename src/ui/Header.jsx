@@ -47,19 +47,19 @@ export const Header = () => {
     const headerCards = [
         {
             title: "Ecology",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima at laudantium saepe illum explicabo! Perferendis velit impedit cumque repudiandae eos, explicabo voluptas in reiciendis earum recusandae, provident asperiores porro possimus.",
+            desc: "We are committed to contributng to the wide adoption of ecological energy sources with a clear goal of decreasing the effect of carbon and other harmful gases that are being released into the atmosphere especially during energy generation.",
             icon: <Player className='h-[70pt] w-[70pt] p-0' src="./assets/lotties/Leaf3.json" loop autoplay />
         },
 
         {
             title: "Renewable",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, officia velit nisi sapiente consectetur aliquam nam, itaque et minima, vero laborum autem veritatis tempore? Placeat nostrum eius totam quidem rem!",
+            desc: "We invest into reneable energy sources for their availability and ease of accessibility. We are building a system where businesses and homes can depend and run a hundred percent on solar or other reneable energy sources.",
             icon: <Player className='h-[70pt] w-[70pt] p-0' src="./assets/lotties/Sunlight.json" loop autoplay />
         },
 
         {
             title: "Sustainable",
-            desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, temporibus cumque, ducimus consequuntur fuga excepturi omnis ipsam illum nihil blanditiis sapiente optio. Vel optio non qui totam deserunt, rem omnis.",
+            desc: "For a system to be generally accepted by a large group of people such as an entire nation, it has to be sustainable. From our previous and continuous researches, we have picked the most sustainable and scalable energy souces for you.",
             icon: <Player className='h-[70pt] w-[70pt] p-0' src="./assets/lotties/Coin.json" loop autoplay />
         }
     ]

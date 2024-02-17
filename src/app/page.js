@@ -1,5 +1,6 @@
 import { Header } from "@/ui/Header";
 import { MeetMainone } from "@/ui/MeetMainone";
+import { MoreOnMainone } from "@/ui/MoreOnMainone";
 import { ServicesSlider } from "@/ui/ServicesSlider";
 import Image from "next/image";
 
@@ -11,6 +12,8 @@ export default function Home() {
       <MeetMainone />
 
       {/* <ServicesSlider /> */}
+
+      <MoreOnMainone />
     </main>
   );
 }
