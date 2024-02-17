@@ -2,7 +2,7 @@ import React from 'react'
 
 export const MoreOnMainoneCard = () => {
     return (
-        <div className='w-full md:w-1/3 p-3'>
+        <div className='w-full lg:w-1/3 p-3'>
             <div className='pl-5 pb-5 bg-white shadow-lg flex justify-end'>
                 <div className='w-[90%] border-t-4 border-t-green-600'>
                     <div className='w-full flex justify-between'>

@@ -33,7 +33,7 @@ export const MoreOnMainone = () => {
             </div>
         </div>
 
-        <div className='md:w-[70%] mx-auto my-5 flex flex-wrap overflow-auto px-5 py-3 w-[20000vw]'>
+        <div className='md:w-[70%] mx-auto my-5 flex flex-wrap overflow-auto px-5 py-3'>
             <MoreOnMainoneCard />
             <MoreOnMainoneCard />
             <MoreOnMainoneCard />
