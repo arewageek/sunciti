@@ -8,7 +8,7 @@ export const MoreOnMainone = () => {
             <div className='w-full lg:w-1/2 p-2 md:p-[20pt]'>
                 <div className='w-1/3 md:w-1/2 h-1 border-t-4 border-t-green-500 mb-5'></div>
                 <h1 className='text-3xl font-bold '>
-                    We Are A Leading Supplier, Manufacture, and Installation of Solar Equipment and Materials
+                    We Are A Leading Supplier, Manufacturer, and Installer of Solar Equipment and Materials
                 </h1>
             </div>
 
