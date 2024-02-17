@@ -82,7 +82,7 @@ export const Header = () => {
     
     return (
         <div className='relative'>
-            <div className='w-full h-screen bg-black/80 text-orange-50 flex flex-col-reverse lg:flex-row justify-around items-center bg-center bg-cover bg-blend-overlay' style={{ backgroundImage: `url('${slides[activeSlide].background}')`}}>
+            <div className='w-full min-h-screen bg-black/80 text-orange-50 flex flex-col-reverse lg:flex-row justify-around items-center bg-center bg-cover bg-blend-overlay py-[100pt]' style={{ backgroundImage: `url('${slides[activeSlide].background}')`}}>
                 <div>
                     <div className='flex flex-row lg:flex-col space-x-4 lg:space-y-4 lg:space-x-0'>
                         {
@@ -94,7 +94,7 @@ export const Header = () => {
                 </div>
                 
                 <div className='w-full lg:w-[80%] px-5 pt-10 mt-10 lg:mt-0 lg:pt-0'>
-                    <div className='w-full md:w-2/3 lg:w-1/2 mb-6'>
+                    <div className='w-full md:w-2/3 lg:w-2/3 mb-6'>
                         <h2 className='text-[40pt] pb-5 md:text-[60pt] lg:text-[80pt] font-extrabold leading-tight'>
                             { slides[activeSlide].heading} <img className='hidden lg:inline ml-5 w-[150pt] h-[65pt] rounded-full grayscale hover:grayscale-0 cursor-pointer transition duration-300 hover:animate-pulse' src={slides[activeSlide].image} />
                         </h2>

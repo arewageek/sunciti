@@ -26,6 +26,49 @@ export const MeetMainone = () => {
 
             <MeetMainonTabs />
 
+            <div className='w-full flex justify-between space-x-3 py-5 flex-col md:flex-row items-center'>
+              <div className='w-full md:w-1/2'>
+                  <img src="./assets/images/21.jpg" alt="img" className='rounded-2xl w-full' />
+              </div>
+
+              <div className='w-full md:w-1/2 py-5 md:py-0'>
+                  <ul className="list-inside pl-[25pt] flex flex-col space-y-4 font-[450]">
+                      <li className="my-2 text-gray-600/90 flex items-center space-x-4">
+                          <div>
+                              <div className="p-1 rounded-full border-2 border-green-500 animate-ping">
+                              <div className="h-[6px] w-[6px] rounded-full bg-green-500"></div>
+                              </div>
+                          </div>
+                          <div>
+                              Ground Mounting System
+                          </div>
+                      </li>
+
+                      <li className="my-2 text-gray-600/90 flex items-center space-x-4">
+                          <div>
+                              <div className="p-1 rounded-full border-2 border-green-500 animate-ping">
+                              <div className="h-[6px] w-[6px] rounded-full bg-green-500"></div>
+                              </div>
+                          </div>
+                          <div>
+                              Flat Roof Mounting System
+                          </div>
+                      </li>
+
+                      <li className="my-2 text-gray-600/90 flex items-center space-x-4">
+                          <div>
+                              <div className="p-1 rounded-full border-2 border-green-500 animate-ping">
+                              <div className="h-[6px] w-[6px] rounded-full bg-green-500"></div>
+                              </div>
+                          </div>
+                          <div>
+                              Solar Carport
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+
               <div className="flex pt-10 flex-col lg:flex-row items-start lg:items-center space-y-3 lg:space-y-0 lg:space-x-4">
                 <a href="/about" className="bg-green-600 font-[450] hover:bg-green-700 hover:text-green-100 transition px-6 py-4 shadow-md text-[11pt] text-green-50">
                   Learn More
