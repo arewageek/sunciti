@@ -1,3 +1,4 @@
+import { CallToAction } from "@/ui/CallToAction";
 import { Header } from "@/ui/Header";
 import { MeetMainone } from "@/ui/MeetMainone";
 import { MoreOnMainone } from "@/ui/MoreOnMainone";
@@ -14,6 +15,10 @@ export default function Home() {
       {/* <ServicesSlider /> */}
 
       <MoreOnMainone />
+
+      <div className="w-full">
+        <CallToAction />
+      </div>
     </main>
   );
 }

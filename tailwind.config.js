@@ -19,7 +19,8 @@ module.exports = {
         'roboto': ['Roboto'],
         'poppins': ["Poppins", "sans-serif"],
         'exo2': ["Exo 2", "sans-serif"],
-        'rocksalt': ["Rock Salt", "cursive"]
+        'rocksalt': ["Rock Salt", "cursive"],
+        'barlow': ["Barlow", "sans-serif"]
       }
     },
   },

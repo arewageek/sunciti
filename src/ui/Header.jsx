@@ -96,7 +96,7 @@ export const Header = () => {
                 <div className='w-full lg:w-[80%] px-5 pt-10 mt-10 lg:mt-0 lg:pt-0'>
                     <div className='w-full md:w-2/3 lg:w-2/3 mb-6'>
                         <h2 className='text-[40pt] pb-5 md:text-[60pt] lg:text-[80pt] font-extrabold leading-tight'>
-                            { slides[activeSlide].heading} <img className='hidden lg:inline ml-5 w-[150pt] h-[65pt] rounded-full grayscale hover:grayscale-0 cursor-pointer transition duration-300 hover:animate-pulse' src={slides[activeSlide].image} />
+                            { slides[activeSlide].heading} <img loading="lazy" className='hidden lg:inline ml-5 w-[150pt] h-[65pt] rounded-full grayscale hover:grayscale-0 cursor-pointer transition duration-300 hover:animate-pulse' src={slides[activeSlide].image} />
                         </h2>
 
                         <p className='text-sm lg:text-lg pr-4 text-gray-300 text-justify'>
