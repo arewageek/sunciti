@@ -8,10 +8,10 @@ export const MeetMainone = () => {
           <div className="w-full lg:w-1/2">
             <div className="relative w-full flex justify-center">
               <div className="border-[7pt] lg:border-[12pt] border-gray-50 shadow-2xl rounded-3xl overflow-hidden">
-                <img src="./assets/images/solar-in-car.jpg" className="rounded-3xl transition duration-500 hover:scale-110 hover:grayscale" alt="" />
+                <img loading="lazy" src="./assets/images/solar-in-car.jpg" className="rounded-3xl transition duration-500 hover:scale-110 hover:grayscale" alt="" />
               </div>
               <div className="rounded-3xl border-[7pt] lg:border-[10pt] border-gray-50 shadow-2xl absolute bottom-5 h-[120pt] lg:h-[200pt] right-[40%] lg:right-20 -rotate-12 overflow-hidden bg-gray-50">
-                <img src="./assets/images/solar-roof.jpg" className="rounded-3xl h-[140pt] lg:h-[200pt] transition duration-500 hover:scale-110 hover:grayscale" alt="" />
+                <img loading="lazy" src="./assets/images/solar-roof.jpg" className="rounded-3xl h-[140pt] lg:h-[200pt] transition duration-500 hover:scale-110 hover:grayscale" alt="" />
               </div>
             </div>
           </div>
@@ -28,7 +28,7 @@ export const MeetMainone = () => {
 
             <div className='w-full flex justify-between space-x-3 py-5 flex-col md:flex-row items-center'>
               <div className='w-full md:w-1/2'>
-                  <img src="./assets/images/21.jpg" alt="img" className='rounded-2xl w-full' />
+                  <img loading="lazy" src="./assets/images/21.jpg" alt="img" className='rounded-2xl w-full' />
               </div>
 
               <div className='w-full md:w-1/2 py-5 md:py-0'>

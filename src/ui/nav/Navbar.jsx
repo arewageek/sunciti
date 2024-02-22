@@ -59,7 +59,7 @@ export const Navbar = () => {
                         {
                             menu.map(nav => {
                                 return (
-                                    <a key={nav.path} href={nav.path} className='relative after:w-[0%] hover:after:w-[100%] after:h-[3px] after:absolute hover:after:bg-orange-600 hover:text-orange-600/90 transition after:rounded-xl hover:after:duration-500 after:scale-x-0 hover:after:scale-x-100 after:-bottom-2'>
+                                    <a key={nav.path} href={nav.path} className='relative after:w-[0%] hover:after:w-[100%] after:h-[3px] after:absolute hover:after:bg-green-600 hover:text-green-600/90 transition after:rounded-xl hover:after:duration-500 after:scale-x-0 hover:after:scale-x-100 after:-bottom-2'>
                                         <div className=''>
                                             { nav.name }
                                         </div>
@@ -70,13 +70,13 @@ export const Navbar = () => {
                     </div>
 
                     <div className='flex space-x-4 justify-end text-sm font-[450]'>
-                        <a href="/cart" className='flex justify-center items-center text-lg hover:text-orange-600 transition'>
+                        <a href="/cart" className='flex justify-center items-center text-2xl hover:text-green-600 text-black transition'>
                             <div className=''>
                                 <FaCartArrowDown />
                             </div>
                         </a>
 
-                        <a href="/quote" className='bg-orange-600 text-orange-50 text-sm font-bold px-5 py-3 hover:text-orange-600 hover:bg-orange-50 border-2 border-orange-600 shadow-lg flex justify-around items-center space-x-3'>
+                        <a href="/quote" className='bg-green-600 text-green-50 text-sm font-bold px-5 py-3 hover:text-green-600 hover:bg-green-50 border-2 border-green-600 shadow-lg flex justify-around items-center space-x-3'>
                             <div className=''>
                                 Request Quote
                             </div>
