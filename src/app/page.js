@@ -1,7 +1,9 @@
+import { BusinessStats } from "@/ui/BusinessStats";
 import { CallToAction } from "@/ui/CallToAction";
 import { Header } from "@/ui/Header";
 import { MeetMainone } from "@/ui/MeetMainone";
 import { MoreOnMainone } from "@/ui/MoreOnMainone";
+import { RequestQuote } from "@/ui/RequestQuote";
 import { ServicesSlider } from "@/ui/ServicesSlider";
 import Image from "next/image";
 
@@ -16,9 +18,11 @@ export default function Home() {
 
       <MoreOnMainone />
 
-      <div className="w-full">
-        <CallToAction />
-      </div>
+      <CallToAction />
+
+      <BusinessStats />
+
+      <RequestQuote />
     </main>
   );
 }

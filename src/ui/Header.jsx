@@ -41,7 +41,7 @@ export const Header = () => {
                 link: '/about',
                 label: 'Learn More'
             }
-        }
+        },
     ]
 
     const headerCards = [

@@ -52,7 +52,7 @@ export const CallToAction = () => {
                     </div>
                 </div>
 
-                <div className="w-full lg:w-[80%] mx-auto rounded-t-3xl md:rounded-xl flex flex-col md:flex-row flex-wrap bg-green-50 my-10 px-5 py-10">
+                <div className="w-full lg:w-[80%] mx-auto rounded-t-3xl md:rounded-xl flex flex-col space-y-3 md:space-y-0 md:flex-row flex-wrap bg-green-50 my-10 px-5 py-10">
                     {
                         call2actionCards.map( (card, index) => 
                             <Call2ActionsCard 
@@ -66,15 +66,15 @@ export const CallToAction = () => {
                     
                 </div>
 
-                <div className="py-5 w-[80%] mx-auto flex flex-col lg:flex-row justify-around items-center">
-                    <div className="w-full lg:w-1/3 mx-4 text-white text-xl">
-                        If you have any questions or need help, feel free to contact with our team, or you can call us any time <b className="font-bold">+234-803-615-2300</b>
+                <div className="py-5 pt-[50pt] w-[80%] mx-auto flex flex-col lg:flex-row md:justify-around md:items-center my-5 space-y-5 md:space-y-0">
+                    <div className="w-full lg:w-1/2 md:mx-4 text-white text-xl font-bold">
+                        If you have any questions or need help, feel free to contact with our team using the livechat or request for a free quotation to be sent to you via WhatsApp or email
                     </div>
 
                     <div>
                         <a href="" className="px-8 py-3.5 rounded border-2 border-white-100 hover:bg-white hover:text-green-600 text-sm text-white font-bold group flex justify-between items-center">
                             <div>
-                                REQUEST QUOTE
+                                REQUEST A FREE QUOTE
                             </div>
                             <div className="pl-4">
                                 <div className="group-hover:animate-pulse text-xl">
