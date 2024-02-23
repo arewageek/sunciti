@@ -1,5 +1,6 @@
 import { BusinessStats } from "@/ui/BusinessStats";
 import { CallToAction } from "@/ui/CallToAction";
+import { FAQ } from "@/ui/FAQ";
 import { Header } from "@/ui/Header";
 import { MeetMainone } from "@/ui/MeetMainone";
 import { MoreOnMainone } from "@/ui/MoreOnMainone";
@@ -23,6 +24,9 @@ export default function Home() {
       <BusinessStats />
 
       <RequestQuote />
+
+      <FAQ />
+      
     </main>
   );
 }

@@ -33,7 +33,7 @@ export const RequestQuote = () => {
     
     return (
         <div className="w-full py-[30pt] md:px-[100pt] font-barlow">
-            <div className="w-full bg-green-800 pt-[30pt] md:pb-[30pt] md:px-[50pt] md:py-[40pt] text-white">
+            <div className="w-full bg-green-800 pt-[30pt] pb-10 md:pb-[30pt] md:px-[50pt] md:py-[40pt] text-white">
                 <div className="w-full md:w-[80%] px-10 mx-auto flex justify-between items-center flex-col md:flex-row space-y-10 lg:space-y-0">
                     <div className="w-full lg:w-3/5 md:px-10 py-5">
                         <form action="#">
@@ -162,7 +162,7 @@ export const RequestQuote = () => {
                                 </div>
 
                                 <div className="text-center px-2 text-sm leading-relaxed py-5 font-[450] -mt-20">
-                                    <p>
+                                    <p className="italic">
                                         { testimonials[visibleTestimonial].quote }
                                     </p>
 
@@ -172,11 +172,11 @@ export const RequestQuote = () => {
                                 </div>
 
                                 <div className="w-fit mx-auto flex space-x-3">
-                                    <button onClick={() => visibleTestimonial > 0 && prevTestimonial()} className={`px-2 py-2 rounded-full bg-black text-green-100 ${visibleTestimonial == 0 ? 'opacity-40': ''}`} disable={visibleTestimonial == 0 ? true: false}>
+                                    <button onClick={() => visibleTestimonial > 0 && prevTestimonial()} className={`px-2 py-2 rounded-full bg-black text-green-100 ${visibleTestimonial == 0 ? 'opacity-40': ''}`} disable={visibleTestimonial == 0 ? 'disable': ''}>
                                         <FaArrowLeft />
                                     </button>
 
-                                    <button onClick={() => visibleTestimonial < testimonials.length - 1 && nextTestimonial()} className={`px-2 py-2 rounded-full bg-black text-green-100 ${visibleTestimonial == (testimonials.length - 1) ? 'opacity-40': ''}`} disable={visibleTestimonial == testimonials.length - 1 ? true : false}>
+                                    <button onClick={() => visibleTestimonial < testimonials.length - 1 && nextTestimonial()} className={`px-2 py-2 rounded-full bg-black text-green-100 ${visibleTestimonial == (testimonials.length - 1) ? 'opacity-40': ''}`} disable={visibleTestimonial == testimonials.length - 1 ? 'disable' : ''}>
                                         <FaArrowRight />
                                     </button>
                                 </div>
