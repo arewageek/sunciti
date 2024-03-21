@@ -6,6 +6,7 @@ import { MeetMainone } from "@/ui/MeetMainone";
 import { MoreOnMainone } from "@/ui/MoreOnMainone";
 import { RequestQuote } from "@/ui/RequestQuote";
 import { ServicesSlider } from "@/ui/ServicesSlider";
+import { CounterUp } from "@/ui/CounterUp";
 import Image from "next/image";
 
 export default function Home() {
@@ -26,7 +27,6 @@ export default function Home() {
       <RequestQuote />
 
       <FAQ />
-      
     </main>
   );
 }
