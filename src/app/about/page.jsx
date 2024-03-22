@@ -31,7 +31,7 @@ const AboutUs = () => {
 
       <div className="w-full lg:w-[80%] mx-auto px-2 lg:px-10">
         <div className="mt-[100pt] mb-10 px-5 lg:px-10">
-          <div className="w-full lg:w-4/5 flex flex-col space-y-3 text-black">
+          <div className="w-full lg:w-4/5 flex flex-col space-y-3 text-gray-800">
             <div className="flex items-center space-x-2">
               <p className="w-[20pt] border-b-2 border-b-gray-500"></p>
               <p className="font-mono text-sm tracking-wider">
@@ -48,10 +48,10 @@ const AboutUs = () => {
                 {aboutSection.map((text, index) => {
                   return (
                     <div key={index} className="w-full lg:w-1/3 px-5 p-5">
-                      <h3 className="font-semibold text-2xl mb-2">
+                      <h3 className="font-semibold text-2xl mb-2 text-gray-800">
                         {text.title}
                       </h3>
-                      <p>{text.content}</p>
+                      <p className="text-gray-700">{text.content}</p>
                     </div>
                   );
                 })}

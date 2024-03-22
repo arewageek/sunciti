@@ -52,7 +52,7 @@ export const FAQ = () => {
   const [expandedFAQ, setExpandedFAQ] = useState(0);
 
   return (
-    <div className="w-full py-[30pt] px-[20pt]" id="faqs">
+    <div className="w-full py-[30pt] px-[20pt] scroll-m-28" id="faqs">
       <div className="flex md:w-[70%] mx-auto justify-between md:space-x-6 md:space-y-0 space-y-10 flex-col md:flex-row">
         <div className="w-full md:w-1/2">
           {/* main faq section */}
