@@ -1,23 +1,14 @@
-"use client";
-import { useEffect, useRef } from "react";
 import {
   FaArrowRight,
   FaClock,
+  FaFacebookF,
+  FaInstagram,
   FaLocationArrow,
-  FaPhone,
   FaPhoneAlt,
+  FaTwitter,
 } from "react-icons/fa";
 
 export const Contactbox = () => {
-  const divRef = useRef(null);
-
-  useEffect(() => {
-    const height = divRef.current.offsetHeight;
-    console.log(height);
-
-    localStorage.setItem("contactboxheight", height);
-  }, [divRef]);
-
   const contactOptions = [
     {
       icon: <FaPhoneAlt />,
@@ -37,11 +28,26 @@ export const Contactbox = () => {
     },
   ];
 
+  const socials = [
+    {
+      label: "facebook",
+      link: "",
+      icon: <FaFacebookF />,
+    },
+    {
+      label: "twitter",
+      link: "",
+      icon: <FaTwitter />,
+    },
+    {
+      label: "instagram",
+      link: "",
+      icon: <FaInstagram />,
+    },
+  ];
+
   return (
-    <div
-      ref={divRef}
-      className="w-full flex-wrap lg:flex-nowrap lg:w-2/3 mx-auto bg-white px-10 py-20 lg:px-20 lg:py-32 flex flex-col lg:flex-row space-y-7 lg:space-y-0 lg:space-x-8 shadow-lg"
-    >
+    <div className="w-full flex-wrap lg:flex-nowrap lg:w-2/3 mx-auto bg-white px-10 py-20 lg:px-20 lg:py-32 flex flex-col lg:flex-row space-y-7 lg:space-y-0 lg:space-x-8 shadow-lg">
       <div className="w-full lg:w-1/2">
         <h3 className="text-3xl font-bold font-poppins">Get In Touch</h3>
         <p className="text-gray-500 my-2">
@@ -110,7 +116,7 @@ export const Contactbox = () => {
         </form>
       </div>
 
-      <div className="w-full lg:w-1/2 px-4 lg:px-10 py-4">
+      <div className="w-full lg:w-1/2 px-0 lg:px-10 py-4">
         <div className="rounded-lg bg-gray-800 px-4 lg:px-14 lg:py-10 py-5 text-gray-200">
           <h4 className="text-2xl font-bold font-exo2 text-white">
             Save your Money, <br />
@@ -123,9 +129,9 @@ export const Contactbox = () => {
           </p>
 
           <div className="w-full py-5">
-            <button className="w-fit px-6 py-5 flex space-x-10 justify-between items-center border-gray-200 border-2 bg-gray-800 text-gray-50 hover:text-white hover:bg-gray-600 transition relative before:bg-gray-800/40 before:w-full before:h-full before:absolute before:left-0 overflow-hidden before:translate-x-[105%] hover:before:translate-x-0 before:duration-700 before:transition before:z-[0]  after:w-full after:bg-gray-800/40 after:h-full after:absolute after:right-0 after:translate-x-[-105%] hover:after:translate-x-0 after:duration-700 after:transition after:z-[0]">
-              <span className="font-bold z-99 relative">About Us</span>
-              <span className="z-99 relative">
+            <button className="w-fit px-6 py-5 flex space-x-10 justify-between items-center border-gray-200 border-2 bg-gray-800 text-gray-50 hover:text-white hover:bg-gray-600 transition relative before:bg-gray-800/50 before:w-full before:h-full before:absolute before:left-0 overflow-hidden before:translate-x-[105%] hover:before:translate-x-0 before:duration-700 before:transition before:z-[0]  after:w-full after:bg-gray-800/50 after:h-full after:absolute  after:right-0 after:translate-x-[-105%] hover:after:translate-x-0 after:duration-700 after:transition after:z-[1]">
+              <span className="font-bold z-[99] relative">About Us</span>
+              <span className="z-[99] relative">
                 <FaArrowRight />
               </span>
             </button>
@@ -150,6 +156,18 @@ export const Contactbox = () => {
                 </div>
               );
             })}
+
+            <div className="w-full flex space-x-2 items-center mt-4">
+              {socials.map((social) => (
+                <a
+                  href={social.link}
+                  key={social.label}
+                  className="p-2 text-gray-200 bg-transparent border-2 border-gray-200 hover:bg-gray-200 hover:text-black transition duration-300 rounded-lg"
+                >
+                  {social.icon}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </div>
