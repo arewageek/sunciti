@@ -21,20 +21,20 @@ export const Partners = () => {
             <p className="font-mono text-sm tracking-wider">Our Partners</p>
           </div>
           <h2 className="text-2xl lg:text-[48px] font-semibold font-poppins leading-snug">
-            Meet Our Top Clients
+            Meet Our Top Partners
           </h2>
 
           <div className="w-full lg:space-x-0 space-y-5 lg:space-y-0 flex flex-col lg:flex-row text-center lg:text-left px-3 pt-10 flex-wrap">
             {partners.map((text, index) => {
               return (
                 <div key={index} className="w-full lg:w-1/4 px-2 py-5 mx-auto">
-                  <div className="group bg-transparent w-[200px] h-[200px] m-auto before:bg-gray-800 before:w-[210px] before:h-[280px] relative before:absolute before:top-0 before:translate-x-[-200%] lg:hover:before:translate-x-0 before:transition before:duration-500 overflow-hidden pb-10 pt-3  flex justify-center items-center">
+                  <div className="group bg-transparent w-[200px] h-[200px] m-auto before:bg-gray-800 before:w-[210px] before:h-[280px] relative before:absolute before:top-0 before:translate-x-[-200%] hover:before:translate-x-0 before:transition before:duration-500 overflow-hidden pb-10 pt-3  flex justify-center items-center">
                     <img
                       src={`/assets/partners/${text.logo}`}
                       alt={text.name}
                       className="scale-75 relative top-0"
                     />
-                    <div className="font-semibold text-[10pt] mb-2 absolute bottom-0 text-center w-full lg:group-hover:text-gray-50 transition">
+                    <div className="font-semibold text-[10pt] mb-2 absolute bottom-0 text-center w-full group-hover:text-gray-50 transition">
                       <h6>{text.name}</h6>
                     </div>
                   </div>
