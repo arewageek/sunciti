@@ -48,21 +48,23 @@ export const RequestQuote = () => {
                 </p>
 
                 <div className="flex space-y-8 flex-col">
-                  <div className="w-full flex flex- md:flex-row space-y-8 md:space-y-0 justify-between">
-                    <div className="w-full lg:w-1/2 md:pr-3">
+                  <div className="w-full flex flex-col lg:flex-row space-y-8 md:space-y-0 justify-between">
+                    <div className="w-full lg:w-1/2 lg:pr-3">
                       <label
                         htmlFor="forwho"
                         className="font-bold pb-4 text-sm"
                       >
-                        Who will be install system?
+                        Service Required
                       </label>
 
                       <select
                         type="text"
                         className="text-sm text-gray-800 font-[450] px-6 py-4 rounded border-gray-800/20 bg-white border-2 w-full"
                       >
-                        <option value="local">Local Contractor</option>
-                        <option value="foreign">Foreign Contractor</option>
+                        <option value="local">Solar Power Supply</option>
+                        <option value="foreign">
+                          Solar Inverter Installation
+                        </option>
                       </select>
                     </div>
 
@@ -82,7 +84,7 @@ export const RequestQuote = () => {
                     </div>
                   </div>
 
-                  <div className="w-full flex flex- md:flex-row space-y-8 md:space-y-0 justify-between">
+                  <div className="w-full flex flex-col md:flex-row space-y-8 md:space-y-0 justify-between">
                     <div className="w-full lg:w-1/2 md:pr-3">
                       <label
                         htmlFor="forwho"
@@ -138,7 +140,7 @@ export const RequestQuote = () => {
                     </div>
                   </div>
 
-                  <div className="w-full flex flex- md:flex-row space-y-8 md:space-y-0 justify-between">
+                  <div className="w-full flex flex-col md:flex-row space-y-8 md:space-y-0 justify-between">
                     <div className="w-full lg:w-1/2 md:pr-3">
                       <label
                         htmlFor="forwho"
