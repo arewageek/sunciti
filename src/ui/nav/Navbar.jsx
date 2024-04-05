@@ -56,7 +56,12 @@ export const Navbar = () => {
     >
       <div className="w-full flex flex-col lg:flex-row justify-between items-center">
         <div className="flex justify-between items-center w-full">
-          <div className="w-full font-bold text-2xl">MainOne Energy</div>
+          <div className="w-full font-bold text-2xl">
+            <img
+              src={`${headerSticky ? "logo.png" : "logo-dark.png"}`}
+              className="h-[60pt]"
+            />
+          </div>
 
           <div
             className="lg:hidden"

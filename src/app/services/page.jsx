@@ -53,6 +53,11 @@ export default function Services() {
 
   const services = [
     {
+      icon: <FaLightbulb />,
+      title: "Solar Power Generation",
+      desc: "We serve our immediate and neighbouring communities with sustainable energy for small and large scale usage",
+    },
+    {
       icon: <FaSolarPanel />,
       title: "Solar Inverter Installation",
       desc: "We install solar panels and inverter to provide your building with sufficient energy",
@@ -61,11 +66,6 @@ export default function Services() {
       icon: <FaHeadphonesAlt />,
       title: "Consultancy",
       desc: "We educate our clients on the best approach to optimizing and maintaining the gadgets",
-    },
-    {
-      icon: <FaLightbulb />,
-      title: "Solar Streetlight",
-      desc: "We install and maintain solar streetlight systems for rural and urban communities",
     },
     {
       icon: <FaCartPlus />,
@@ -186,9 +186,9 @@ export default function Services() {
               <h3 className="text-4xl lg:text-6xl font-bold">Our Solutions</h3>
             </div>
 
-            <div className="flex w-full mt-10 flex-col lg:flex-row flex-wrap border-collapse space-x-0">
+            <div className="flex w-full mt-10 flex-col lg:flex-row flex-wrap border-collapse space-x-0 ">
               {services.map((service) => (
-                <div className="group w-full lg:w-1/3 border-[1.4px] border-gray-400 px-5 lg:px-10 py-10 before:bg-gray-700 before:w-full before:h-full relative before:absolute before:left-0 before:top-0 before:z-0 before:translate-x-[-100%] overflow-hidden hover:before:translate-x-[0%] before:transition before:duration-300">
+                <div className="group w-full lg:w-1/3 border-[1.4px] border-gray-300 px-5 lg:px-10 py-10 before:bg-gray-700 before:w-full before:h-full relative before:absolute before:left-0 before:top-0 before:z-0 before:translate-x-[-100%] overflow-hidden hover:before:translate-x-[0%] before:transition before:duration-300">
                   <div className="z-3 relative">
                     <div className="text-6xl group-hover:text-white duration-500 transition">
                       {service.icon}

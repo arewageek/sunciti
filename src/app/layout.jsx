@@ -3,9 +3,9 @@ import { Navbar } from "@/ui/nav/Navbar";
 import { Footer } from "@/ui/Footer";
 
 export const metadata = {
-  title: "Mainone Energy & Engineering Ltd",
+  title: "Sunciti Eternal",
   description:
-    "Mainone energy is a solar and electrical energy company that ...",
+    "Sunciti Eternal is a solar and electrical energy company that ...",
 };
 
 export default function RootLayout({ children }) {

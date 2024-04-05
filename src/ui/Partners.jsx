@@ -2,14 +2,14 @@ import React from "react";
 
 export const Partners = () => {
   const partners = [
-    { logo: "", name: "Client 1" },
-    { logo: "", name: "Client 2" },
-    { logo: "", name: "Client 3" },
-    { logo: "", name: "Client 4" },
-    { logo: "", name: "Client 5" },
-    { logo: "", name: "Client 6" },
-    { logo: "", name: "Client 7" },
-    { logo: "", name: "Client 8" },
+    { logo: "futmx.png", name: "FUT Minna" },
+    { logo: "boi.png", name: "Bank of Industry" },
+    { logo: "ubec.jpg", name: "UBEC" },
+    { logo: "sug.png", name: "Student Union Government" },
+    // { logo: "", name: "Client 5" },
+    // { logo: "", name: "Client 6" },
+    // { logo: "", name: "Client 7" },
+    // { logo: "", name: "Client 8" },
   ];
 
   return (
@@ -28,11 +28,11 @@ export const Partners = () => {
             {partners.map((text, index) => {
               return (
                 <div key={index} className="w-full lg:w-1/4 px-2 py-5 mx-auto">
-                  <div className="group bg-transparent w-[200px] h-[200px] m-auto before:bg-gray-800 before:w-[210px] before:h-[280px] relative before:absolute before:top-0 before:translate-x-[-200%] lg:hover:before:translate-x-0 before:transition before:duration-500 overflow-hidden">
+                  <div className="group bg-transparent w-[200px] h-[200px] m-auto before:bg-gray-800 before:w-[210px] before:h-[280px] relative before:absolute before:top-0 before:translate-x-[-200%] lg:hover:before:translate-x-0 before:transition before:duration-500 overflow-hidden pb-10 pt-3  flex justify-center items-center">
                     <img
-                      src={partners.logo}
-                      alt={partners.name}
-                      className="w-full h-full relative top-0"
+                      src={`/assets/partners/${text.logo}`}
+                      alt={text.name}
+                      className="scale-75 relative top-0"
                     />
                     <div className="font-semibold text-[10pt] mb-2 absolute bottom-0 text-center w-full lg:group-hover:text-gray-50 transition">
                       <h6>{text.name}</h6>

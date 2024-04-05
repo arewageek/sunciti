@@ -14,17 +14,17 @@ export const Footer = () => {
     {
       icon: <AiFillPhone />,
       label: "Phone Number",
-      content: "(+234) 803-615-2300",
+      content: "(+234) xxx xxx xxxx",
     },
     {
       icon: <AiOutlineMail />,
       label: "Send Us An Email",
-      content: "hello@mainoneenergy.com",
+      content: "hello@suncitieternal.com",
     },
     {
       icon: <FaLocationArrow />,
       label: "Office Address",
-      content: "Opp Jabi Garage, FCT",
+      content: "Gidan Kwano, Minna, Niger State",
     },
   ];
 
@@ -63,7 +63,9 @@ export const Footer = () => {
       <div className="w-full md:w-[80%] px-4 mx-auto">
         <div className="my-5 flex flex-col md:flex-row space-y-5 md:space-y-0 lg:justify-around  lg:items-center font-exo2">
           <div className="w-full md:w-1/4 lg:px-3 py-2">
-            <div className="text-3xl font-bold">MainOne Logo</div>
+            <div className="text-3xl font-bold">
+              <img src="logo-dark.png" className="h-[80pt]" />
+            </div>
           </div>
 
           {contactOptions.map((option, index) => (
@@ -89,8 +91,9 @@ export const Footer = () => {
           <div className="w-full md:w-1/4 px-3 py-2">
             <h2 className="font-bold text-2xl">About Company</h2>
             <p className="mt-4">
-              Mainone Energy is a renewable energy consultant, manufacturer, and
-              installer with vast expertise and experience in the industry ...
+              Sunciti Eternal is a renewable energy farm founded to provide
+              residence of Minna and beyond with electricity from a renewable
+              and sustainable energy source
             </p>
             <div className="mt-4 flex space-x-1 flex-wrap">
               {socials.map((page, index) => (

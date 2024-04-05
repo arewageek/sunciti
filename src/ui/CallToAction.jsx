@@ -17,18 +17,18 @@ export const CallToAction = () => {
   const call2actionCards = [
     {
       icon: <AiOutlineBank />,
-      note: "Save money & increase value of your home by solar panels.",
+      note: "Save money & increase value of your home.",
     },
     {
       icon: <FaSolarPanel />,
       note: "The sun provides us with free energy, place solar panels on roof.",
     },
     {
-      note: "The sun provides us with free energy, place solar panels on roof.",
+      note: "Designed to serve homes and businesses alike",
       icon: <FaBuilding />,
     },
     {
-      note: "Our sales engineers have experience & can design any system.",
+      note: "Our team is experienced & design systems of all types.",
       icon: <FaHardHat />,
     },
     {
@@ -36,7 +36,7 @@ export const CallToAction = () => {
       icon: <FaHeadphonesAlt />,
     },
     {
-      note: "Solar cell, solar module manufacturing facilities are considerable",
+      note: "We go for the very best tools and quality to serve you properly",
       icon: <FaCloudSun />,
     },
     {
