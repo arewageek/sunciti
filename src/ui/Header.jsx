@@ -23,7 +23,7 @@ export const Header = () => {
       id: 1,
       image: "./assets/images/Image2.png",
       background: "./assets/images/solar-bg-3.jpg",
-      heading: "Solar Power Generation",
+      heading: "Solar Inverter installation",
       desc: "We generate solar power for our immediate and neighbouring community, providing them with a sustainable and efficient energy source capable of powering homes and businesses",
       cta: {
         link: "/services",
