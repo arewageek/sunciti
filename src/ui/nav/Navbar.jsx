@@ -81,7 +81,7 @@ export const Navbar = () => {
           <div className="flex flex-col lg:flex-row lg:space-x-4 text-lg mt-10 lg:mt-0 lg:text-md font-[450] lg:items-center">
             {menu.map((nav) => {
               return (
-                <>
+                <div key={nav.path}>
                   <div className="lg:hidden my-2 border-b-[1px] border-b-gray-100 pb-3 w-1/2">
                     <a
                       key={nav.path}
@@ -98,7 +98,7 @@ export const Navbar = () => {
                   >
                     <div className="">{nav.name}</div>
                   </a>
-                </>
+                </div>
               );
             })}
           </div>

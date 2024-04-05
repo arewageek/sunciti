@@ -14,7 +14,7 @@ export const CounterUp = ({ content }) => {
           >
             <p className="font-bold text-md font-mono">{content.label}</p>
             <CountUp
-              start={0}
+              start={10}
               end={content.number}
               delay={1}
               duration={10}
